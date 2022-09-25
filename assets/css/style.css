@@ -8,18 +8,29 @@
   }
 
   header {
-    background-color: aqua;
+    background-color:  #2343F2;
     text-align: center;
-    height: 50px;
+    height: 60px;
+    color: white;
   }
 
   h1 {
     text-align: center;
-    padding: 5px;
+    padding: 10px 5px;
   }
 
   h3 {
-    margin: 0;
+    margin: 0px;
+  }
+
+  h4 {
+   margin-top: 5px;
+   margin-bottom: 5px;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: bold;
   }
 
   .flex-row {
@@ -33,6 +44,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-top: 10px;
   }
 
   .left-column {
@@ -40,7 +52,8 @@
   }
 
   .right-column {
-    width: 79%;
+    width: 78%;
+    margin-left: 1px;
   }
 
   .justify-space-between {
@@ -49,17 +62,16 @@
 
   .border{
     border: 1px solid black;
-    margin-top: 10px;
   }
 
   .btn {
-    /*font-size: 1.3rem;*/
     font-size: 20px;
     text-decoration:none;
     padding: 6px 5px;
     width: 100%;
     display: block;
     margin: 5px 0;
+    background-color: #C0D7FB
   }
 
   .form-input {
@@ -67,12 +79,21 @@
     padding: 6px 5px;
     width: 100%;
     display: block;
-
+    
   }
 
   .weather-image {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
+  }
+
+  .five-day-forecast {
+    background-color: #3E8DE3;
+    color: white;
+    padding-left: 5px;
+    padding-right: 25px;
+    margin-top: 5px;
+   
   }
 
   #search-area {
@@ -87,6 +108,18 @@
     padding: 5px;
   }
  
-  #five-day-forecast-weather {
-    padding: 5px;
+  
+  @media (max-width: 825px) {
+    .flex-row {
+      flex-direction: column;
+    }
+    
+    .flex-column {
+      width: 80%;
+    }
+
+    h1 {
+      font-size: 25px;
+    }
+
   }
