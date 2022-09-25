@@ -156,7 +156,7 @@ function getFiveDayForecast(lat, lon) {
 
 function displayCurrentWeather(cityName, currentDate, temp, humidity, windSpeed, iconcode) {
     var date =  moment.unix(currentDate).format("MM/DD/YYYY");
-    var iconUrl = "http://openweathermap.org/img/w/" + iconcode + ".png";
+    var iconUrl = "https://openweathermap.org/img/w/" + iconcode + ".png";
 
     var cityEl = document.createElement("h3");
     cityEl.innerHTML = cityName + " " + "(" + date + ") ";
@@ -205,7 +205,7 @@ function displayFiveDayForecast(info) {
 
 function displayForecastData(weatherInfo){
     var date = moment.unix(weatherInfo.dt).format("MM/DD/YYYY");
-    var iconUrl = "http://openweathermap.org/img/w/" + weatherInfo.weather[0].icon + ".png";
+    var iconUrl = "https://openweathermap.org/img/w/" + weatherInfo.weather[0].icon + ".png";
     var temp = weatherInfo.main.temp;
     var windSpeed = weatherInfo.wind.speed;
     var humidity = weatherInfo.main.humidity;
