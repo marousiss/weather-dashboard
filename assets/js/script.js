@@ -82,7 +82,7 @@ function renderSearchHistory(){
 
 function getCitysWeatherInfo(city) {
     
-    var apiUrl = "http://api.openweathermap.org/geo/1.0/direct?q=" + city + ",US&limit=1&appid=e82d07c38f8006d0d8ccd5d9f7f67108";
+    var apiUrl = "https://api.openweathermap.org/geo/1.0/direct?q=" + city + ",US&limit=1&appid=e82d07c38f8006d0d8ccd5d9f7f67108";
 
     fetch(apiUrl)
         .then(function(response) {
