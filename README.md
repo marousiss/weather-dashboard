@@ -21,9 +21,9 @@ A search history of the cities viewed will be kept on the left side of the scree
 
 Screenshots:
 
-![Screenshot-01]()
-![Screenshot-02]()
-
+![screenshot-01](./assets/images/screenshot-01.png)
+![screenshot-02](./assets/images/screenshot-02.png)
+![screenshot-03](./assets/images/screenshot-03.png)
 
 
 # Credits
